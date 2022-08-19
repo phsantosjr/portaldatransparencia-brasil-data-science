@@ -1,10 +1,40 @@
-## Portal da Transparência - Brasil - Estudo ##
+## Portal da Transparência - Brasil - Estudo
+![](https://img.shields.io/badge/Python-3.9-blue.svg)
 
 Esse projeto é para estudo das bibliotecas de Data Science do Python
 
-### Fazer download das bases ? ###
+### Como executar o projeto
+- Criar um virtual env
+- instalar os requirements
+- rodar o jupyter
 
-#### Bolsa Família ####
+### Criar virtualenv
+
+* Ambiente Linux
+
+```
+mkvirtualenv --python=/usr/bin/python3.6 data-science
+```
+
+
+### Executar Jupyter
+
+Abra um terminal, ative o virtualenv e execute o comando.
+```
+jupyter notebook
+```
+
+Aguarde o browser abrir o Jupyter.
+
+### Instalar requirements.txt
+
+```
+pip install -r requirements.txt
+```
+
+### Fazer download das bases ?
+
+#### Bolsa Família
 
 Acessar o Portal da Transparência (http://www.portaltransparencia.gov.br/download-de-dados), ir ao item 
 Benefícios ao Cidadão --> Bolsa Família Pagamentos.
@@ -35,26 +65,7 @@ df = pd.read_csv('bases/201901_RemuneracaoMilitares.csv', encoding ='latin1',
                  engine='python', quotechar='"', delimiter=";", decimal=',')
 ```
 
-### Criar virtualenv ###
-
-* Ambiente Linux
-
-```
-mkvirtualenv --python=/usr/bin/python3.6 data-science
-```
-
-
-### Executar Jupyter ###
-
-Abra um terminal, ative o virtualenv e execute o comando.
-```
-jupyter notebook
-```
-
-Aguarde o browser abrir o Jupyter.
-
-
-### Autor ###
+### Autor
 
 PH
 
